@@ -1,0 +1,31 @@
+.stage {
+  padding: 3.313rem 4.75rem;
+  background: linear-gradient(to bottom right, $light-green, $dodger-blue);
+
+
+  &__title {
+    margin-bottom: 3.125rem;
+  }
+
+  &__text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 2.93rem;
+    align-items: center;
+    background-image: url(../../assets/icons/vertical-line.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+
+    & > *:nth-child(even) {
+      padding-left: 4rem;
+    }
+
+    p {
+      font-size: 1.875rem;
+      font-weight: 700;
+    }
+  }
+
+}

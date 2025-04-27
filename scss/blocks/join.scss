@@ -1,0 +1,77 @@
+.join {
+  padding: 3.75rem 0;
+
+  &__wrap {
+    background-image: url(../../assets/icons/join__section-line.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h2 {
+      color: $rangoon-green;
+    }
+
+    &-right {
+      position: relative;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      list-style: decimal;
+
+      
+    }
+
+    &-list_last {
+      position: absolute;
+      left: -1.8rem;
+    }
+
+
+    &-item,
+    &-span {
+      color: $rangoon-green;
+      font-weight: 500;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    &-last {
+      padding-top: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      gap: 0.6rem;
+    }
+
+
+    &-img {
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-self: center;
+    }
+
+    &-btn {
+      display: flex;
+      align-self: center;
+      @include btn($green-gradient, $white, 1.25rem, 0.75rem, 4.25rem, 0.75rem, 4.25rem, 6.25rem);
+      font-family: 'Actay Wide';
+      margin-top: 5rem;
+
+      &_link {
+        margin: 0 auto;
+        text-decoration: none;
+        padding-bottom: 0.1rem;
+        border-bottom: 0.063rem solid $white;
+      }
+    }
+  }
+}

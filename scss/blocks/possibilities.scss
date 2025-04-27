@@ -1,0 +1,58 @@
+.possibilities {
+  position: relative;
+  padding: 3.75rem;
+  background: 
+  linear-gradient(to bottom left, $light-green, $dodger-blue);
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 46.125rem;
+    height: 92%;
+    background-image: url(../../assets/img/possibilities.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+  h2 {
+    margin-bottom: 3.75rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.813rem;
+  }
+
+  &__container {
+    padding: 1.025rem 0 1.025rem 2.5rem;
+    width: 50%;
+    border-radius: 6.25rem;
+    background: linear-gradient(to right , $blue-purple, $blue-violet);
+
+    &-wrap {
+      display: flex;
+      flex-direction: row;
+      gap: 1.313rem;
+
+      
+    }
+
+    &-img {
+      width: 2.813rem;
+      height: 1.951rem;
+      display: flex;
+      align-self: center;
+    }
+
+    &-span {
+      font-weight: 600;
+      line-height: 1.813rem;
+      font-size: 1.5rem;
+    }
+  }
+}

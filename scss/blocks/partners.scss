@@ -1,0 +1,22 @@
+.partners {
+  padding: 4.063rem 0;
+
+  h2 {
+    color: $rangoon-green;
+    margin-bottom: 2.063rem;
+  }
+
+  &__line-top,
+  &__line-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+ 
+  }
+
+
+
+  
+}

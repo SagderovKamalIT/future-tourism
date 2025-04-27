@@ -1,0 +1,29 @@
+.awards {
+  padding-bottom: 1.313rem;
+
+  &__container {
+    padding: 2.813rem 2.063rem 2.313rem 2.063rem;
+    background: 
+    linear-gradient(to bottom right, $light-green, $dodger-blue);
+    border-radius: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+
+    p {
+       line-height: 3rem;
+       font-size: 2.5rem;
+       font-weight: 700;
+       text-align: center;
+    }
+
+    button {
+      
+      font-family: "Grandis Extended", sans-serif;
+      width: 32.5rem;
+      @include btn($white, $rangoon-green, 1.25rem, 0.75rem, 5.219rem, 0.75rem, 5.219rem,  3.125rem);
+      text-decoration: underline;
+    }
+  }
+}

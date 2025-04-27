@@ -1,0 +1,726 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-DemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Travels";
+  src: url("../fonts/TTTravels-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Grandis Extended";
+  src: url("../fonts/GrandisExtended-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Actay Wide";
+  src: url("../fonts/ActayWide-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "TT Travels", sans-serif;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.wrap {
+  min-width: 320px;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 8.813rem;
+  box-sizing: border-box;
+}
+
+.experts-wrap {
+  min-width: 320px;
+  max-width: 1220px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 6.875rem;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-family: "Grandis Extended";
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+p,
+span,
+a {
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1350px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media (max-width: 1190px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 960px) {
+  html {
+    font-size: 60%;
+  }
+}
+.header {
+  background: #FFFFFF;
+  padding: 2.75rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+.header__logo {
+  width: 9.5rem;
+  height: 2.938rem;
+}
+.header__link {
+  display: flex;
+  gap: 4.875rem;
+  align-items: center;
+}
+.header__nav {
+  text-align: center;
+}
+.header__nav ul {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 3.563rem;
+}
+.header__nav-item {
+  text-align: center;
+}
+.header__nav-item a {
+  display: inline-block;
+  align-items: center;
+  font-family: "Actay Wide";
+  color: #4093FF;
+  text-decoration: none;
+  line-height: 1.875rem;
+  font-size: 1.5rem;
+  align-self: center;
+}
+.header__btn {
+  background: linear-gradient(to bottom right, #A1FF8B, #3F93FF);
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  padding: 0.688rem 3.344rem 0.688rem 3.344rem;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  border: none;
+  font-family: "Actay Wide";
+}
+
+.about {
+  position: relative;
+  padding: 13.188rem 0 5.625rem 0;
+  background: linear-gradient(to top left, #A1FF8B, #3F93FF);
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 8.313rem;
+  right: 0;
+  width: 73.188rem;
+  height: 41.813rem;
+  background: url(../../assets/img/about-background-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.about__text h1 {
+  line-height: 5.063rem;
+  font-size: 3.938rem;
+  margin-bottom: 1.313rem;
+}
+.about__text-paragraph {
+  width: 27.875rem;
+  line-height: 2.375rem;
+  font-size: 2rem;
+  border-top: 0.125rem solid #FFFFFF;
+  padding: 0.875rem 0 1.375rem 0.375rem;
+}
+.about__text-wrapper {
+  font-weight: 500;
+  width: 16.813rem;
+  margin-left: 0.375rem;
+  padding: 0.188rem 2.063rem;
+  background-color: #FFFFFF;
+  color: #191919;
+  line-height: 2.375rem;
+  font-size: 2rem;
+  border-radius: 6.25rem;
+}
+
+.project {
+  padding: 4.125rem 0;
+}
+.project h3 {
+  line-height: 2.375rem;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 2.438rem;
+  border-bottom: 0.125rem solid #000000;
+}
+.project__container {
+  margin-top: 2.25rem;
+}
+.project__container-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+.project__container-item {
+  display: flex;
+  align-items: center;
+  gap: 1.563rem;
+}
+.project__container-item img {
+  width: 2.838rem;
+  height: 2.838rem;
+}
+.project__container-paragraph {
+  color: #10B2A4;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.project__container-span {
+  color: #191919;
+  font-weight: 400;
+}
+
+.awards {
+  padding-bottom: 1.313rem;
+}
+.awards__container {
+  padding: 2.813rem 2.063rem 2.313rem 2.063rem;
+  background: linear-gradient(to bottom right, #A1FF8B, #3F93FF);
+  border-radius: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.75rem;
+}
+.awards__container p {
+  line-height: 3rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.awards__container button {
+  font-family: "Grandis Extended", sans-serif;
+  width: 32.5rem;
+  background: #FFFFFF;
+  color: #191919;
+  font-size: 1.25rem;
+  padding: 0.75rem 5.219rem 0.75rem 5.219rem;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  border: none;
+  text-decoration: underline;
+}
+
+.goal {
+  padding: 3.938rem 0 5.75rem 0;
+  background-image: url(../../assets/icons/goal-background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+}
+.goal__container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 2.688rem;
+  width: 47.25rem;
+}
+.goal__container h2 {
+  font-family: "Grandis Extended", sans-serif;
+  color: #191919;
+  font-size: 2.5rem;
+}
+.goal__container p {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #191919;
+  line-height: 2.375rem;
+}
+
+.nominations {
+  padding: 1.875rem 0;
+  background: linear-gradient(to top left, #A1FF8B, #3F93FF);
+}
+.nominations h2 {
+  font-family: "Grandis Extended", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+.nominations p {
+  font-size: 1.688rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.categories {
+  padding: 2.688rem 0 2.25rem 0;
+}
+.categories__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}
+.categories__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2.25rem;
+}
+.categories__item {
+  padding: 1.813rem 1.938rem 1.5rem 1.938rem;
+  border: 0.438rem solid transparent;
+  border-radius: 3.125rem;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to bottom left, #A1FF8B, #3F93FF) border-box;
+}
+.categories__item p {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #191919;
+}
+.categories__item img {
+  padding-top: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+.categories__link {
+  border: 0.063rem solid #191919;
+  border-radius: 6.25rem;
+  padding: 0.5rem 1.25rem;
+  max-width: 36.688rem;
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.categories__link-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #191919;
+  padding-left: 0.625rem;
+}
+.categories__link-btn {
+  width: 4.438rem;
+  height: 4.438rem;
+  background-color: #191919;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-decoration: none;
+}
+.categories__link-btn img {
+  width: 2.299rem;
+  height: 1.463rem;
+}
+.categories__link-btn:hover {
+  background-color: black;
+}
+
+.stage {
+  padding: 3.313rem 4.75rem;
+  background: linear-gradient(to bottom right, #A1FF8B, #3F93FF);
+}
+.stage__title {
+  margin-bottom: 3.125rem;
+}
+.stage__text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 2.93rem;
+  align-items: center;
+  background-image: url(../../assets/icons/vertical-line.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+.stage__text > *:nth-child(even) {
+  padding-left: 4rem;
+}
+.stage__text p {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.experts {
+  padding-top: 3.438rem;
+  padding-bottom: 1.5rem;
+}
+.experts-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.experts__title {
+  color: #191919;
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
+.experts__slider-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+}
+.experts__slider-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.experts__slider-btn img {
+  width: 1.938rem;
+  height: 3.313rem;
+}
+.experts__slider-viewport {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.experts__slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+.experts__slider-container {
+  flex: 0 0 33.3333333333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.438rem;
+}
+.experts__slider-container img {
+  width: 16.75rem;
+  height: 19.563rem;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.experts__slider-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.438rem;
+  text-align: center;
+}
+.experts__slider-text-container h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 2.375rem;
+}
+.experts__slider-text-container p {
+  padding: 0 2rem;
+  color: #191919;
+  font-weight: 400;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+  line-height: 1.063rem;
+}
+
+.possibilities {
+  position: relative;
+  padding: 3.75rem;
+  background: linear-gradient(to bottom left, #A1FF8B, #3F93FF);
+}
+.possibilities::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: 46.125rem;
+  height: 92%;
+  background-image: url(../../assets/img/possibilities.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.possibilities h2 {
+  margin-bottom: 3.75rem;
+}
+.possibilities__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.813rem;
+}
+.possibilities__container {
+  padding: 1.025rem 0 1.025rem 2.5rem;
+  width: 50%;
+  border-radius: 6.25rem;
+  background: linear-gradient(to right, #4F2CDA, #A020E4);
+}
+.possibilities__container-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 1.313rem;
+}
+.possibilities__container-img {
+  width: 2.813rem;
+  height: 1.951rem;
+  display: flex;
+  align-self: center;
+}
+.possibilities__container-span {
+  font-weight: 600;
+  line-height: 1.813rem;
+  font-size: 1.5rem;
+}
+
+.join {
+  padding: 3.75rem 0;
+}
+.join__wrap {
+  background-image: url(../../assets/icons/join__section-line.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+}
+.join__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.join__container h2 {
+  color: #191919;
+}
+.join__container-right {
+  position: relative;
+}
+.join__container-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: decimal;
+}
+.join__container-list_last {
+  position: absolute;
+  left: -1.8rem;
+}
+.join__container-item, .join__container-span {
+  color: #191919;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.join__container-last {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+}
+.join__container-img {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-self: center;
+}
+.join__container-btn {
+  display: flex;
+  align-self: center;
+  background: linear-gradient(to bottom right, #A1FF8B, #3F93FF);
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  padding: 0.75rem 4.25rem 0.75rem 4.25rem;
+  border-radius: 6.25rem;
+  cursor: pointer;
+  border: none;
+  font-family: "Actay Wide";
+  margin-top: 5rem;
+}
+.join__container-btn_link {
+  margin: 0 auto;
+  text-decoration: none;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.063rem solid #FFFFFF;
+}
+
+.organizer {
+  padding: 1.875rem 0;
+  background: linear-gradient(to top left, #A1FF8B, #3F93FF);
+}
+.organizer h2 {
+  margin-bottom: 1.5rem;
+}
+.organizer__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.563rem;
+}
+.organizer__container-img {
+  display: flex;
+  align-self: center;
+  width: 4.563rem;
+  height: 4.563rem;
+}
+.organizer__container-span {
+  font-weight: 700;
+  font-size: 1.688rem;
+  line-height: 2rem;
+}
+
+.partners {
+  padding: 4.063rem 0;
+}
+.partners h2 {
+  color: #191919;
+  margin-bottom: 2.063rem;
+}
+.partners__line-top, .partners__line-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footer {
+  padding: 3.75rem 0 3rem 0;
+}
+.footer h3 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #191919;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

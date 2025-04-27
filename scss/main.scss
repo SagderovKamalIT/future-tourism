@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'core';
+
+@import 'blocks/header.scss';
+@import 'blocks/about.scss';
+@import 'blocks/project.scss';
+@import 'blocks/awards.scss';
+@import 'blocks/goal.scss';
+@import 'blocks/nominations.scss';
+@import 'blocks/categories.scss';
+@import 'blocks/stage.scss';
+@import 'blocks/experts.scss';
+@import 'blocks/possibilities.scss';
+@import 'blocks/join.scss';
+@import 'blocks/organizer.scss';
+@import 'blocks/partners.scss';
+@import 'blocks/footer.scss';

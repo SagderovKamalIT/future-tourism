@@ -1,0 +1,60 @@
+.header {
+  background: $white;
+  padding: 2.75rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+  }
+
+  &__logo {
+    width: 9.5rem;
+    height: 2.938rem;
+  }
+
+  &__link {
+    display: flex;
+    gap: 4.875rem;
+    align-items: center;
+  }
+
+  &__nav {
+    text-align: center;
+
+    ul {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 3.563rem;
+
+
+    }
+      &-item {
+        text-align: center;
+
+        a {
+          display: inline-block;
+          align-items: center;
+          font-family: 'Actay Wide';
+          color: $dark-sky-blue;
+          text-decoration: none;
+          line-height: 1.875rem;
+          font-size: 1.5rem;
+          align-self: center;
+        }
+      }
+    }
+
+    &__btn {
+      @include btn($green-gradient, $white, 1.25rem, 0.688rem, 3.344rem, 0.688rem, 3.344rem, 6.25rem);
+      font-family: 'Actay Wide';
+    }
+
+}

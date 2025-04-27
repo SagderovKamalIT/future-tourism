@@ -1,0 +1,28 @@
+.goal {
+  padding: 3.938rem 0 5.75rem 0;
+  background-image: url(../../assets/icons/goal-background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 2.688rem;
+    width: 47.25rem;
+
+    h2 {
+      font-family: "Grandis Extended", sans-serif;
+      color: $rangoon-green;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $rangoon-green;
+      line-height: 2.375rem;
+    }
+  }
+}
