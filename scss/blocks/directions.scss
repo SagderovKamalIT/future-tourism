@@ -1,0 +1,54 @@
+.directions {
+  padding: 2.375rem 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 1.875rem;
+
+    &-item {
+      position: relative;
+      padding: 2.25rem 2.813rem;
+      border: 0.438rem solid transparent;
+      border-radius: 3.125rem;
+      background: 
+      linear-gradient(white, white) padding-box, linear-gradient(to bottom left, #A1FF8B, #3F93FF) border-box;
+
+
+
+    }
+
+    &-img {
+      position: absolute;
+      content: '';
+      bottom: 3.25rem;
+      right: 1.3rem;
+      width: 12.625rem;
+      height: 11.125rem;
+
+     
+    }
+
+    &-text {
+      width: 19.563rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.438rem;
+      
+
+      h2 {
+        color: $rangoon-green;
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      p {
+        color: $rangoon-green;
+        line-height: 1.188rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -133,6 +133,16 @@ body {
   box-sizing: border-box;
 }
 
+.categories-wrap {
+  min-width: 320px;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 7.938rem;
+  box-sizing: border-box;
+}
+
 body,
 html {
   overflow-x: hidden;
@@ -375,18 +385,51 @@ section {
 }
 
 .nominations {
-  padding: 1.875rem 0;
+  padding: 10rem 0 2.25rem 0;
   background: linear-gradient(to top left, #A1FF8B, #3F93FF);
+}
+.nominations__link {
+  border: 0.063rem solid #FFFFFF;
+  border-radius: 6.25rem;
+  padding: 0.399rem 0.563rem;
+  max-width: 36.688rem;
+  width: 37%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 1.375rem;
+  align-items: center;
+  margin-bottom: 2.531rem;
+}
+.nominations__link-btn {
+  width: 1.765rem;
+  height: 1.765rem;
+  background-color: #FFFFFF;
+  border-radius: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-decoration: none;
+}
+.nominations__link-btn img {
+  width: 0.914rem;
+  height: 0.582rem;
+}
+.nominations__link-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #FFFFFF;
 }
 .nominations h2 {
   font-family: "Grandis Extended", sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 0.625rem;
+  font-size: 3.938rem;
+  margin-bottom: 2.5rem;
 }
 .nominations p {
-  font-size: 1.688rem;
-  line-height: 2rem;
+  font-size: 3rem;
   font-weight: 700;
+  line-height: 3.625rem;
 }
 
 .categories {
@@ -721,6 +764,48 @@ section {
   color: #191919;
   display: flex;
   justify-content: center;
+}
+
+.directions {
+  padding: 2.375rem 0;
+}
+.directions__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  row-gap: 1.5rem;
+  column-gap: 1.875rem;
+}
+.directions__container-item {
+  position: relative;
+  padding: 2.25rem 2.813rem;
+  border: 0.438rem solid transparent;
+  border-radius: 3.125rem;
+  background: linear-gradient(white, white) padding-box, linear-gradient(to bottom left, #A1FF8B, #3F93FF) border-box;
+}
+.directions__container-img {
+  position: absolute;
+  content: "";
+  bottom: 3.25rem;
+  right: 1.3rem;
+  width: 12.625rem;
+  height: 11.125rem;
+}
+.directions__container-text {
+  width: 19.563rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.438rem;
+}
+.directions__container-text h2 {
+  color: #191919;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.directions__container-text p {
+  color: #191919;
+  line-height: 1.188rem;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
