@@ -11,7 +11,8 @@
     right: 0;
     width: 46.125rem;
     height: 92%;
-    background-image: url(../../assets/img/possibilities.png);
+    // background-image: url(../../assets/img/possibilities.png);
+    background-image: url(#{$base-url}/assets/img/possibilities.png);
     background-repeat: no-repeat;
     background-size: cover;
   }

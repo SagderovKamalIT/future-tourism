@@ -2,7 +2,8 @@
   padding: 3.75rem 0;
 
   &__wrap {
-    background-image: url(../../assets/icons/join__section-line.svg);
+    // background-image: url(../../assets/icons/join__section-line.svg);
+    background-image: url(#{$base-url}/assets/icons/join__section-line.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;

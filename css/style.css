@@ -264,7 +264,7 @@ section {
   right: 0;
   width: 73.188rem;
   height: 41.813rem;
-  background: url(../../assets/img/about-background-img.png);
+  background: url(/future-tourism/assets/img/about-background-img.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,7 +349,7 @@ section {
   font-weight: 700;
   text-align: center;
 }
-.awards__container button {
+.awards__container a {
   font-family: "Grandis Extended", sans-serif;
   width: 32.5rem;
   background: #FFFFFF;
@@ -364,10 +364,10 @@ section {
 
 .goal {
   padding: 3.938rem 0 5.75rem 0;
-  background-image: url(../../assets/icons/goal-background.svg);
+  background-image: url(/future-tourism/assets/icons/goal-background.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: bottom right;
+  background-position: bottom 0 right 6rem;
 }
 .goal__container {
   display: flex;
@@ -515,7 +515,7 @@ section {
   grid-template-rows: repeat(4, 1fr);
   row-gap: 2.93rem;
   align-items: center;
-  background-image: url(../../assets/icons/vertical-line.svg);
+  background-image: url(/future-tourism/assets/icons/vertical-line.svg);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain;
@@ -618,7 +618,7 @@ section {
   right: 0;
   width: 46.125rem;
   height: 92%;
-  background-image: url(../../assets/img/possibilities.png);
+  background-image: url(/future-tourism/assets/img/possibilities.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -657,7 +657,7 @@ section {
   padding: 3.75rem 0;
 }
 .join__wrap {
-  background-image: url(../../assets/icons/join__section-line.svg);
+  background-image: url(/future-tourism/assets/icons/join__section-line.svg);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain;

@@ -11,7 +11,8 @@
     right: 0;
     width: 73.188rem;
     height: 41.813rem;
-    background: url(../../assets/img/about-background-img.png);
+    // background: url(../../assets/img/about-background-img.png);
+    background: url(#{$base-url}/assets/img/about-background-img.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
