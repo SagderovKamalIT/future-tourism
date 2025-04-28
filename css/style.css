@@ -106,6 +106,10 @@ body {
   font-family: "TT Travels", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   min-width: 320px;
   max-width: 100%;
@@ -405,7 +409,7 @@ section {
   width: 1.765rem;
   height: 1.765rem;
   background-color: #FFFFFF;
-  border-radius: 40%;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -786,7 +790,7 @@ section {
 .directions__container-img {
   position: absolute;
   content: "";
-  bottom: 3.25rem;
+  bottom: 4.25rem;
   right: 1.3rem;
   width: 12.625rem;
   height: 11.125rem;

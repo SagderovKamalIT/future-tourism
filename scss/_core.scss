@@ -2,6 +2,10 @@ body {
   font-family: 'TT Travels', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container { 
   @include min-max(320px, 100%); 
 }
