@@ -1341,7 +1341,7 @@ section {
     background-position: bottom 0 right -4rem;
   }
   .possibilities__list {
-    row-gap: 1.188rem;
+    row-gap: 0.6rem;
   }
   .possibilities h2 {
     font-size: 1.5rem;
