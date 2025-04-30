@@ -107,13 +107,8 @@ section {
   }
 }
 
-@media (max-width: 440px) {
-  html {
-    font-size: 35%; 
-  }
-}
 
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .wrap {
     max-width: 100%;
     padding: 0 1.3rem;

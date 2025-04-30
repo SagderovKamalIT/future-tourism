@@ -210,12 +210,7 @@ section {
     font-size: 40%;
   }
 }
-@media (max-width: 440px) {
-  html {
-    font-size: 35%;
-  }
-}
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .wrap {
     max-width: 100%;
     padding: 0 1.3rem;
@@ -325,7 +320,7 @@ section {
     padding: 0.55rem 2.68rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .header {
     padding: 1.5rem 0;
     flex-wrap: wrap;
@@ -424,7 +419,7 @@ section {
     border-radius: 5rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .about {
     padding: 2.25rem 0 0 0;
   }
@@ -523,7 +518,7 @@ section {
     font-size: 1.6rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .project {
     padding: 1.563rem 0 0.688rem 0;
   }
@@ -605,7 +600,7 @@ section {
     border-radius: 2.5rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .awards {
     padding: 1.375rem 0 1.188rem 0;
   }
@@ -670,7 +665,7 @@ section {
     line-height: 1.9rem;
   }
 }
-@media (max-width: 374px) {
+@media (max-width: 475px) {
   .goal {
     padding: 1.813rem 0 2.25rem 0;
     background-position: bottom 0 right -6.2rem;
@@ -834,7 +829,7 @@ section {
     line-height: 1.188rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .nominations {
     padding: 1.438rem 0 2.125rem 0;
   }
@@ -976,7 +971,7 @@ section {
     height: 1.17rem;
   }
 }
-@media (max-width: 374px) {
+@media (max-width: 475px) {
   .categories {
     padding: 1.313em 0 1.625rem 0;
   }
@@ -1070,7 +1065,7 @@ section {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 374px) {
+@media (max-width: 475px) {
   .stage {
     padding: 2.025rem 1.671rem;
   }
@@ -1215,7 +1210,7 @@ section {
     line-height: 0.85rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .experts {
     padding-top: 1.3rem;
     padding-bottom: 1.45rem;
@@ -1336,7 +1331,7 @@ section {
     line-height: 1.2rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .possibilities {
     padding: 2.188rem 0 0 0;
   }
@@ -1474,7 +1469,7 @@ section {
     padding-bottom: 0.08rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .join {
     padding: 1.563rem 0;
   }
@@ -1559,7 +1554,7 @@ section {
     line-height: 1.6rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .organizer {
     padding: 1.438rem 0;
   }
@@ -1609,7 +1604,7 @@ section {
     height: auto;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .partners {
     padding: 1.813rem 0;
   }
@@ -1648,7 +1643,7 @@ section {
     font-size: 1rem;
   }
 }
-@media (max-width: 370px) {
+@media (max-width: 475px) {
   .footer {
     padding: 1.875rem 0;
   }
@@ -1727,7 +1722,7 @@ section {
     font-size: 0.8rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .directions {
     padding: 1.563rem 0;
   }
@@ -1867,7 +1862,7 @@ section {
   transition: transform 0.3s linear;
 }
 
-@media (max-width: 374px) {
+@media (max-width: 475px) {
   .burger__btn {
     display: block;
   }
