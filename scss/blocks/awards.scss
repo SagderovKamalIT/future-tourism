@@ -27,3 +27,54 @@
     }
   }
 }
+
+@media (max-width: 860px) {
+  .awards {
+    padding-bottom: 1.05rem;
+
+    &__container {
+      padding: 2.25rem 1.65rem 1.85rem 1.65rem;
+      border-radius: 2.5rem;
+      gap: 1.4rem;
+
+      p {
+        line-height: 2.4rem;
+        font-size: 2rem;
+      }
+
+      a {
+        width: 26rem;
+        font-size: 1rem;
+        padding: 0.6rem 4.175rem;
+        border-radius: 2.5rem;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+  .awards {
+    padding: 1.375rem 0 1.188rem 0;
+
+    &__container {
+      padding: 0.938rem 1.5rem 0.75rem 1.5rem;
+      border-radius: 1.625rem;
+      gap: 0.938rem;
+
+      p {
+        text-align: center;
+        line-height: 1.188rem;
+        font-size: 1rem;
+      }
+
+      a {
+        text-align: center;
+        width: 100%;
+        font-size: 0.875rem;
+        padding: 0.781rem 1.125rem;
+        border-radius: 3.125rem;
+      }
+    }
+  }
+}

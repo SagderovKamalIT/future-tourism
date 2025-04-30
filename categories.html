@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>НОМИНАЦИИ</title>
 
+  <link rel="icon" href="./assets/img/favicon.png" type="image/png" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -14,29 +15,80 @@
   <header class="header">
     <div class="wrap">
       <div class="header__container">
-        <a class="header__logo" href="https://tourism.rudn.ru/" target="_blank" rel="noopener noreferrer">
+        <a
+          class="header__logo"
+          href="https://mail.yandex.ru/compose?to=konkurs_tourism@rudn.ru"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="./assets/icons/rudn-logo.svg" alt="Логотип РУДН" />
         </a>
 
         <div class="header__link">
-
           <nav class="header__nav">
-            <ul class="hader__nav-list">
+            <ul class="header__nav-list">
               <li class="header__nav-item">
-                <a href="">о проекте</a>
+                <a href="#about">о проекте</a>
               </li>
 
               <li class="header__nav-item">
-                <a href="">номинации</a>
+                <a href="#nominations">номинации</a>
               </li>
 
               <li class="header__nav-item">
-                <a href="">этапы</a>
+                <a href="#stage">этапы</a>
               </li>
             </ul>
+
+           
           </nav>
 
-          <button class="header__btn">Регистрация</button>
+          <a class="header__btn" href="mailto:konkurs_tourism@rudn" target="_blank" rel="noopener noreferrer">
+            Регистрация
+          </a>
+          
+         
+        </div>
+
+        <button class="burger__btn js-burger__btn">
+          <span></span>
+        </button>
+        
+
+        <div class="burger js-burger" >
+
+          <div class="burger__content js-burger__content">
+            <a
+          class="burger__logo"
+          href="https://mail.yandex.ru/compose?to=konkurs_tourism@rudn.ru"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/icons/burger__logo.svg" alt="Логотип РУДН" />
+        </a>
+
+        <nav class="burger__nav">
+          <ul class="burger__nav-list">
+            <li class="burger__nav-item">
+              <a href="#about">о проекте</a>
+            </li>
+
+            <li class="burger__nav-item">
+              <a href="#nominations">номинации</a>
+            </li>
+
+            <li class="burger__nav-item">
+              <a href="#stage">этапы</a>
+            </li>
+          </ul>
+
+         
+        </nav>
+
+        <a class="burger__btn-link" href="mailto:konkurs_tourism@rudn" target="_blank" rel="noopener noreferrer">
+          Регистрация
+        </a>
+          </div>
 
         </div>
       </div>
@@ -49,11 +101,11 @@
 
       <div class="categories-wrap">
 
-        <div class="nominations__link"  >
-          
+        <div class="nominations__link">
+
 
           <a href="./index.html" class="nominations__link-btn
-            target="_blank" rel="noopener noreferrer">
+            target=" _blank" rel="noopener noreferrer">
             <img src=" ./assets/icons/back-logo.svg" alt="Иконка 'назад'" />
           </a>
 
@@ -75,6 +127,8 @@
       </div>
     </section>
 
+    
+    
     <section class="directions">
 
       <div class="categories-wrap">
@@ -97,7 +151,7 @@
 
             <img class="directions__container-img" src="./assets/icons/business-trip.svg" alt="business-trip">
 
-      
+
 
           </div>
 
@@ -106,7 +160,7 @@
             <div class="directions__container-text">
               <h2>
                 «Сувенир будущего:
-сделано в России» 
+                сделано в России» 
               </h2>
 
               <p>разработка концепций ярких сувениров и фирменного мерча </p>
@@ -118,9 +172,9 @@
           <div class="directions__container-item">
             <div class="directions__container-text">
               <h2>
-                «Вкусные путешествия: 
-искусство гастрономического
-туризма» 
+                «Вкусные путешествия:
+                искусство гастрономического
+                туризма» 
               </h2>
 
               <p>создание гастрономического турпродукта на основе фирменных блюд и продуктов региона </p>
@@ -161,7 +215,7 @@
             <div class="directions__container-text">
               <h2>
                 «Легендарные имена:
-герои среди нас»  
+                герои среди нас»  
               </h2>
 
               <p> создание экскурсии, посвященной великим личностям родного региона </p>
@@ -174,8 +228,8 @@
             <div class="directions__container-text">
               <h2>
                 «Туризм 2.0:
-интерактивные
-приключения»  
+                интерактивные
+                приключения»  
               </h2>
 
               <p>создание интерактивной
@@ -221,8 +275,8 @@
             <div class="directions__container-text">
               <h2>
                  «Гостеприимство
-с традициями: вековые
-секреты родного края» 
+                с традициями: вековые
+                секреты родного края» 
               </h2>
 
               <p>погружение в уникальные обычаи
@@ -248,44 +302,44 @@
             <img class="directions__container-img" src="./assets/icons/moon.svg" alt="moon">
           </div>
 
-          
+
           <div class="directions__container-item">
             <div class="directions__container-text">
               <h2>
                 «Мост культур: туризм
-и гостеприимство
-без границ» 
+                и гостеприимство
+                без границ» 
               </h2>
 
               <p>разработка проекта, объединяющего
                 культурные традиции разных стран
                 (уникальный межнациональный маршрут, интерактивный гид, способствующая взаимопониманию между туристами
                 и местными жителями) 
-                </p>
+              </p>
             </div>
 
             <img class="directions__container-img" src="./assets/icons/team_sucscess.svg" alt="team_sucscess">
           </div>
 
 
-             
+
           <div class="directions__container-item">
             <div class="directions__container-text">
               <h2>
                 «Зеленый туризм: сохраним
-Планету вместе»  
+                Планету вместе»  
               </h2>
 
               <p>создание экологически устойчивого
                 турпродукта, способствующего сохранению природы, популяризации экологического
-                туризма 
-                </p>
+                туризма
+              </p>
             </div>
 
             <img class="directions__container-img" src="./assets/icons/wild_animals.svg" alt="wild_animals">
           </div>
 
-             
+
           <div class="directions__container-item">
             <div class="directions__container-text">
               <h2>
@@ -294,8 +348,9 @@
                 время»  
               </h2>
 
-              <p>разработка проекта, который связывает исторические события разных стран и регионов, предлагая туристам погрузиться в мировую историю через путешествия  
-                </p>
+              <p>разработка проекта, который связывает исторические события разных стран и регионов, предлагая туристам
+                погрузиться в мировую историю через путешествия  
+              </p>
             </div>
 
             <img class="directions__container-img" src="./assets/icons/global_history.svg" alt="global_history">
@@ -305,9 +360,10 @@
       </div>
 
     </section>
+  
+    
   </main>
-
-  <footer class="footer" >
+  <footer class="footer">
     <div class="wrap">
       <h3>
         © RUDN UNIVERSITY

@@ -1,0 +1,151 @@
+.burger__btn {
+  display: none;
+  position: relative;
+  z-index: 500;
+  width: 2rem; 
+  height: 1.5rem; 
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 0.125rem; 
+    width: 100%;
+    background-color: $dark-sky-blue;
+    transition: 0.3s ease;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 0.125rem; 
+    background-color: $dark-sky-blue;
+    transform: translateY(-50%);
+  }
+
+  &.burger-btn__open {
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+    // background-image: url(../../assets/icons/burger-close_btn.svg);
+    background-image: url(#{$base-url}/assets/icons/burger-close_btn.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.25rem;
+    height: 1.25rem;
+
+    &::before,
+    &::after,
+    span {
+      display: none;
+    }
+  }
+}
+
+.burger__logo {
+  width: 5.438rem;
+  height: auto;
+  margin-bottom: 1.5rem;
+
+  img {
+    width: 5.438rem; 
+    height: 1.688rem;
+  }
+}
+
+.burger__nav {
+  width: 16.188rem;
+  padding-bottom: 1.063rem;
+  border-bottom: 0.063rem solid $white;
+  margin-bottom: 1.063rem;
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.813rem;
+  }
+}
+
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  &__open {
+    opacity: 1;
+    visibility: visible;
+
+    .burger__content {
+      transform: translateX(0);
+    }
+  }
+
+  
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    margin: 0 auto;
+    width: 100%;
+    height: 19.688rem; 
+    padding: 2.188rem 3.625rem 2rem 3.625rem; 
+    background-color: #4093FF;
+    transform: translateX(100%);
+    transition: transform 0.3s linear;
+  }
+}
+
+@media (max-width: 374px) { 
+  .burger__btn {
+    display: block;
+    
+  }
+
+  .header__link {
+    display: none;
+  }
+
+  .burger__btn-link {
+    @include btn($green-gradient, $white, 1.25rem, 0.688rem, 3.344rem, 0.688rem, 3.344rem, 6.25rem);
+   font-family: 'Actay Wide';
+ }
+
+
+    .burger__nav-item {
+
+      a{
+        font-size: 1.5rem;
+      }
+      
+    }
+
+    }
+  
+ 

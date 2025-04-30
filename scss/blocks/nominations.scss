@@ -53,3 +53,168 @@
     line-height: 3.625rem;
   }
 }
+
+@media (max-width: 860px) {
+  .nominations {
+    padding: 8rem 0 1.8rem 0;
+
+    &__link {
+      border-width: 0.05rem;
+      border-radius: 5rem;
+      padding: 0.32rem 0.45rem;
+      max-width: 29.35rem;
+      width: 29.6%;
+      gap: 1.1rem;
+      margin-bottom: 2.025rem;
+
+      &-btn {
+        width: 1.41rem;
+        height: 1.41rem;
+
+        img {
+          width: 0.73rem;
+          height: 0.465rem;
+        }
+      }
+
+      &-text {
+        font-size: 1rem;
+      }
+    }
+
+    h2 {
+      font-size: 3.15rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+    }
+  }
+}
+
+
+@media (max-width: 860px) {
+  .nominations {
+    padding: 8rem 0 1.8rem 0;
+
+    &__link {
+      border-width: 0.05rem;
+      border-radius: 5rem;
+      padding: 0.32rem 0.45rem;
+      max-width: 29.35rem;
+      width: 29.6%;
+      gap: 1.1rem;
+      margin-bottom: 2.025rem;
+
+      &-btn {
+        width: 1.41rem;
+        height: 1.41rem;
+
+        img {
+          width: 0.73rem;
+          height: 0.465rem;
+        }
+      }
+
+      &-text {
+        font-size: 1rem;
+      }
+    }
+
+    h2 {
+      font-size: 3.15rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 375px) {
+  .nominations {
+    padding: 1.438rem 0;
+
+    &__link {
+      border-width: 0.05rem;
+      border-radius: 5rem;
+      padding: 0.32rem 0.45rem;
+      max-width: 29.35rem;
+      width: 29.6%;
+      gap: 1.1rem;
+      margin-bottom: 2.025rem;
+
+      &-btn {
+        width: 1.41rem;
+        height: 1.41rem;
+
+        img {
+          width: 0.73rem;
+          height: 0.465rem;
+        }
+      }
+
+      &-text {
+        font-size: 1rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.188rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .nominations {
+    padding: 1.438rem 0 2.125rem 0;
+
+    
+    &__link {
+      border-width: 0.05rem;
+      border-radius: 5rem;
+      padding: 0.32rem 0.45rem;
+      max-width: 29.35rem;
+      width: 100%;
+      gap: 0.438rem;
+      margin-bottom: 1.125rem;
+
+      &-btn {
+        width: 1.41rem;
+        height: 1.41rem;
+
+        img {
+          width: 0.73rem;
+          height: 0.465rem;
+        }
+      }
+
+      &-text {
+        font-size: 1rem;
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+    }
+  }
+}

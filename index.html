@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ТУРИЗМ БУДУЩЕГО – БУДУЩЕЕ ТУРИЗМА</title>
 
+    <link rel="icon" href="./assets/img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="container">
@@ -35,18 +36,63 @@
                   <a href="#stage">этапы</a>
                 </li>
               </ul>
+
+             
             </nav>
 
             <a class="header__btn" href="mailto:konkurs_tourism@rudn" target="_blank" rel="noopener noreferrer">
               Регистрация
             </a>
             
+           
+          </div>
+
+          <button class="burger__btn js-burger__btn">
+            <span></span>
+          </button>
+          
+
+          <div class="burger js-burger" >
+
+            <div class="burger__content js-burger__content">
+              <a
+            class="burger__logo"
+            href="https://mail.yandex.ru/compose?to=konkurs_tourism@rudn.ru"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/icons/burger__logo.svg" alt="Логотип РУДН" />
+          </a>
+
+          <nav class="burger__nav">
+            <ul class="burger__nav-list">
+              <li class="burger__nav-item">
+                <a href="#about">о проекте</a>
+              </li>
+
+              <li class="burger__nav-item">
+                <a href="#nominations">номинации</a>
+              </li>
+
+              <li class="burger__nav-item">
+                <a href="#stage">этапы</a>
+              </li>
+            </ul>
+
+           
+          </nav>
+
+          <a class="burger__btn-link" href="mailto:konkurs_tourism@rudn" target="_blank" rel="noopener noreferrer">
+            Регистрация
+          </a>
+            </div>
+
           </div>
         </div>
       </div>
     </header>
 
-    <main>
+     <main>
       <section class="about" id="about">
         <div class="wrap">
           <div class="about__text">
@@ -65,7 +111,8 @@
             <p class="about__text-wrapper">9-11 классов</p>
           </div>
         </div>
-      </section>
+      </section> 
+      
 
       <section class="project">
         <div class="wrap">
@@ -115,6 +162,7 @@
           </div>
         </div>
       </section>
+      
 
       <section class="awards">
         <div class="wrap">
@@ -161,22 +209,33 @@
               <li class="categories__item">
                 <p>«Сувенир будущего: сделано в России» </p>
 
-                <img
-                  src="./assets/img/souvenir-image.png"
-                  alt="Картинка с сувениром"
-                />
+                <picture>
+                  <source media="(max-width: 375px )" srcset="./assets/img/souvenir-image-mobile.png" />
+                  <img
+                    src="./assets/img/souvenir-image.png"
+                    alt="Картинка с сувениром"
+                  />
+                </picture>
               </li>
 
               <li class="categories__item">
                 <p>«Квест приключений: спорт и экстрим по родному краю» </p>
 
-                <img src="./assets/img/quest.png" alt="Картинка квест" />
+                <picture>
+                  <source media="(max-width: 375px )" srcset="./assets/img/quest-mobile.png" />
+                  <img src="./assets/img/quest.png" alt="Картинка квест" />
+                </picture>
+               
               </li>
 
               <li class="categories__item">
                 <p>«Зеленый туризм: сохраним Планету вместе» </p>
 
-                <img src="./assets/img/tourism.png" alt="Картинка квест" />
+                <picture>
+                  <source media="(max-width: 375px )" srcset="./assets/img/tourism-mobile.png" />
+                  <img src="./assets/img/tourism.png" alt="Картинка квест" />
+                </picture>
+               
               </li>
             </ul>
 
@@ -395,195 +454,202 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> 
 
-      <section class="possibilities" >
+      
 
-        <div class="wrap">
-          <h2>ПОЧЕМУ СТОИТ УЧАСТВОВАТЬ?</h2>
+      
+<section class="possibilities" >
 
-          <ul class="possibilities__list" >
+  <div class="wrap">
+    <h2>ПОЧЕМУ СТОИТ УЧАСТВОВАТЬ?</h2>
 
-            <li class="possibilities__container">
-  
-              <div class="possibilities__container-wrap">
-  
-                <img class="possibilities__container-img" src="./assets/icons/possibilities.svg" alt="Иконка в виде галочки">
-    
-                <span class="possibilities__container-span" >
-                  Бесплатное участие
-                </span>
-              </div>
-  
-              
-  
-             
+    <ul class="possibilities__list" >
+
+      <li class="possibilities__container">
+
+        <div class="possibilities__container-wrap">
+
+          <img class="possibilities__container-img" src="./assets/icons/possibilities.svg" alt="Иконка в виде галочки">
+
+          <span class="possibilities__container-span" >
+            Бесплатное участие
+          </span>
+        </div>
+
+        
+
+       
+      </li>
+      <li class="possibilities__container">
+
+        <div class="possibilities__container-wrap">
+
+          <img class="possibilities__container-img" src="./assets/icons/possibilities.svg" alt="Иконка в виде галочки">
+
+          <span class="possibilities__container-span" >
+            Дипломы, сертификаты
+            и памятные подарки от РУДН
+          </span>
+        </div>
+
+      </li>
+      <li class="possibilities__container">
+
+        <div class="possibilities__container-wrap">
+
+          <img class="possibilities__container-img" src="./assets/icons/possibilities.svg" alt="Иконка в виде галочки">
+
+          <span class="possibilities__container-span" >
+            Шанс реализовать свой проект
+            при поддержке экспертов 
+          </span>
+        </div>
+
+      </li>
+      
+                <li class="possibilities__container">
+      
+                  <div class="possibilities__container-wrap">
+      
+                    <img class="possibilities__container-img" src="./assets/icons/possibilities.svg" alt="Иконка в виде галочки">
+        
+                    <span class="possibilities__container-span" >
+                      Публикация лучших работ
+                      на ресурсах партнеров 
+                    </span>
+                  </div>
+      
+                </li>
+    </ul>
+
+
+
+
+  </div>
+
+</section>
+
+
+
+<section class="join" >
+
+  <div class="wrap join__wrap">
+
+    <div class="join__container">
+
+      <div class="div">
+        <h2>КАК <br>
+          ПРИСОЕДИНИТЬСЯ? </h2>
+      </div>
+
+        <div class="join__container-right">
+
+          <ol class="join__container-list" >
+            <li class="join__container-item" >
+              Выбери номинацию 
             </li>
-            <li class="possibilities__container">
-  
-              <div class="possibilities__container-wrap">
-  
-                <img class="possibilities__container-img" src="./assets/icons/possibilities.svg" alt="Иконка в виде галочки">
-    
-                <span class="possibilities__container-span" >
-                  Дипломы, сертификаты
-                  и памятные подарки от РУДН
-                </span>
-              </div>
-  
+
+            <li class="join__container-item" >
+              Зарегистрируйся до 10 мая 2025 г.
             </li>
-            <li class="possibilities__container">
-  
-              <div class="possibilities__container-wrap">
-  
-                <img class="possibilities__container-img" src="./assets/icons/possibilities.svg" alt="Иконка в виде галочки">
-    
-                <span class="possibilities__container-span" >
-                  Шанс реализовать свой проект
-                  при поддержке экспертов 
-                </span>
-              </div>
-  
+
+            <li class="join__container-item" >
+              Отправь проект на почту
+
+
             </li>
-            
-                      <li class="possibilities__container">
-            
-                        <div class="possibilities__container-wrap">
-            
-                          <img class="possibilities__container-img" src="./assets/icons/possibilities.svg" alt="Иконка в виде галочки">
-              
-                          <span class="possibilities__container-span" >
-                            Публикация лучших работ
-                            на ресурсах партнеров 
-                          </span>
-                        </div>
-            
-                      </li>
+      
+          </ol>
+
+          <ul class="join__container-list_last" >
+            <li  class="join__container-item join__container-last">
+              <img class="join__container-img"  src="./assets/icons/mail.svg" alt="Иконка почты">
+              <span >
+                <a class="join__container-span" href="https://mail.yandex.ru/compose?to=konkurs_tourism@rudn.ru" >konkurs_tourism@rudn.ru</a>
+
+              </span>
+            </li>
           </ul>
 
-
-
-
-        </div>
-
-      </section>
-
-      <section class="join" >
-
-        <div class="wrap join__wrap">
-
-          <div class="join__container">
-
-            <div class="div">
-              <h2>КАК <br>
-                ПРИСОЕДИНИТЬСЯ? </h2>
-            </div>
-      
-              <div class="join__container-right">
-
-                <ol class="join__container-list" >
-                  <li class="join__container-item" >
-                    Выбери номинацию 
-                  </li>
-  
-                  <li class="join__container-item" >
-                    Зарегистрируйся до 10 мая 2025 г.
-                  </li>
-  
-                  <li class="join__container-item" >
-                    Отправь проект на почту
-  
-  
-                  </li>
-            
-                </ol>
-
-                <ul class="join__container-list_last" >
-                  <li  class="join__container-item join__container-last">
-                    <img class="join__container-img"  src="./assets/icons/mail.svg" alt="Иконка почты">
-                    <span >
-                      <a class="join__container-span" href="https://mail.yandex.ru/compose?to=konkurs_tourism@rudn.ru" >konkurs_tourism@rudn.ru</a>
-
-                    </span>
-                  </li>
-                </ul>
-
-                <div class="join__container-btn" >
-                  <a class="join__container-btn_link"  href="https://mail.yandex.ru/compose?to=konkurs_tourism@rudn.ru" target="_blank"
-                  rel="noopener noreferrer">Начать регистрацию</a>
-                </div>
-              </div>
-
-             
-
+          <div class="join__container-btn" >
+            <a class="join__container-btn_link"  href="https://mail.yandex.ru/compose?to=konkurs_tourism@rudn.ru" target="_blank"
+            rel="noopener noreferrer">Начать регистрацию</a>
           </div>
-
         </div>
 
-      </section>
+       
 
-      <section class="organizer" >
+    </div>
 
-        <div class="wrap">
+  </div>
 
-          <h2>
-            ОРГАНИЗАТОР КОНКУРСА 
-          </h2>
+</section>
 
-          <div class="organizer__container">
-            <img class="organizer__container-img" src="./assets/icons/school-logo.svg" alt="Логотип ВШУ">
-            <span class="organizer__container-span" >
-              Высшая школа управления
+<section class="organizer" >
+
+  <div class="wrap">
+
+    <h2>
+      ОРГАНИЗАТОР КОНКУРСА 
+    </h2>
+
+    <div class="organizer__container">
+      <img class="organizer__container-img" src="./assets/icons/school-logo.svg" alt="Логотип ВШУ">
+      <span class="organizer__container-span" >
+        Высшая школа управления
 Российского университета дружбы народов имени Патриса Лумумбы
-            </span>
-          </div>
+      </span>
+    </div>
 
-        </div>
+  </div>
 
-      </section>
+</section>
 
-      <section class="partners" >
-        <div class="wrap">
-             <h2>
-              ПАРТНЕРЫ
-             </h2>
+<section class="partners" >
+  <div class="wrap">
+       <h2>
+        ПАРТНЕРЫ
+       </h2>
 
-             <div class="partners__line-top">
+       <div class="partners__line-top">
 
-              <img src="./assets/icons/sustanaible-tourism.svg" alt="Устойчивый туризм">
+        <img src="./assets/icons/sustanaible-tourism.svg" alt="Устойчивый туризм">
 
-              <img src="./assets/icons/russian-traveler.svg" alt="russian-traveler">
+        <img src="./assets/icons/russian-traveler.svg" alt="russian-traveler">
 
-              <img src="./assets/icons/Ассамблея народов Евразии и Африки.svg" alt="Ассамблея народов Евразии и Африки">
+        <img src="./assets/icons/Ассамблея народов Евразии и Африки.svg" alt="Ассамблея народов Евразии и Африки">
 
-             </div>
+       </div>
 
-             <div class="partners__line-bottom">
+       <div class="partners__line-bottom">
 
-              <img src="./assets/icons/Национальное конгресс-бюро.svg" alt="Национальное конгресс-бюро">
+        <img src="./assets/icons/Национальное конгресс-бюро.svg" alt="Национальное конгресс-бюро">
 
-              <img src="./assets/icons/Logo_OCIG 1.svg" alt="Logo_OCIG">
+        <img src="./assets/icons/Logo_OCIG 1.svg" alt="Logo_OCIG">
 
-              <img src="./assets/icons/laboratory-logo.svg" alt="Лаборатория">
+        <img src="./assets/icons/laboratory-logo.svg" alt="Лаборатория">
 
-              <img src="./assets/icons/Российский союз туриндустрии.svg" alt="Российский союз туриндустрии">
+        <img class="partners__line-img" src="./assets/icons/Российский союз туриндустрии.svg" alt="Российский союз туриндустрии">
 
-             </div>
-        </div>
-      </section>
+       </div>
+  </div>
+</section>
 
 
-      
-    </main>
 
-    <footer class="footer" >
-      <div class="wrap">
-        <h3>
-          © RUDN UNIVERSITY
-        </h3>
-      </div>
-    </footer>
+</main>
+
+<footer class="footer" >
+<div class="wrap">
+  <h3>
+    © RUDN UNIVERSITY
+  </h3>
+</div>
+</footer>
+
 
     <script src="./js/slider.js"></script>
+    <script src="./js/burger.js"></script>
   </body>
 </html>

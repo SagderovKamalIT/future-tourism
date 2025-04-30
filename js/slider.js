@@ -1,9 +1,18 @@
 const track = document.querySelector('.js-experts__slider');
 const slides = document.querySelectorAll('.js-experts__slider-container');
-
 let slideWidth = slides[0].clientWidth;
 let currentIndex = 0;
 let autoScrollInterval;
+
+function getVisibleSlidesCount() {
+  return window.innerWidth <= 374 ? 1 : 3;
+}
+
+
+function updateSlideWidth() {
+  slideWidth = slides[0].clientWidth;
+}
+
 
 function updateSliderPosition() {
   track.style.transition = 'transform 0.3s ease-in-out';
@@ -20,14 +29,18 @@ function stopAutoScroll() {
   clearInterval(autoScrollInterval);
 }
 
+
 function moveSlide(step) {
   stopAutoScroll();
+  const visibleSlides = getVisibleSlidesCount();
+  const maxIndex = slides.length - visibleSlides;
+
   currentIndex += step;
 
-  if (currentIndex > slides.length - 3) {
+  if (currentIndex > maxIndex) {
     currentIndex = 0;
   } else if (currentIndex < 0) {
-    currentIndex = slides.length - 3;
+    currentIndex = maxIndex;
   }
 
   updateSliderPosition();
@@ -42,10 +55,12 @@ document.querySelector('.js-experts__slider-btn.right').addEventListener('click'
   moveSlide(1);
 });
 
+
 window.addEventListener('resize', () => {
-  slideWidth = slides[0].clientWidth;
+  updateSlideWidth();
   updateSliderPosition();
 });
 
-// Инициализация
+updateSlideWidth();
+updateSliderPosition();
 startAutoScroll();

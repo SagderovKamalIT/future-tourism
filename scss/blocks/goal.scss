@@ -1,6 +1,6 @@
 .goal {
   padding: 3.938rem 0 5.75rem 0;
-  // background-image: url(../../assets/icons/goal-background.svg);
+  //  background-image: url(../../assets/icons/goal-background.svg);
   background-image: url(#{$base-url}/assets/icons/goal-background.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -24,6 +24,49 @@
       font-weight: 500;
       color: $rangoon-green;
       line-height: 2.375rem;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .goal {
+    padding: 3.15rem 0 4.6rem 0;
+    background-position: bottom 0 right 4.8rem;
+
+    &__container {
+      gap: 2.15rem;
+      width: 37.8rem;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 374px) {
+  .goal {
+    padding: 1.813rem 0 2.25rem 0;
+    background-position: bottom 0 right -6.2rem;
+
+    &__container {
+      gap: 1.188rem;
+      width: 15.938rem;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+        line-height: 1.063rem;
+      }
     }
   }
 }

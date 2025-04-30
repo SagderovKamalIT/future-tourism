@@ -87,3 +87,46 @@ section {
     font-size: 60%; 
   }
 }
+
+
+@media (max-width: 860px) {
+  .wrap {
+    padding: 0 7.05rem;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 50%; 
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 40%; 
+  }
+}
+
+@media (max-width: 440px) {
+  html {
+    font-size: 35%; 
+  }
+}
+
+@media (max-width: 375px) {
+  .wrap {
+    max-width: 100%;
+    padding: 0 1.3rem;
+    box-sizing: border-box;
+  }
+
+  .categories-wrap {
+    max-width: 100%;
+    padding: 0 1.3rem;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 100%;
+  }
+}
