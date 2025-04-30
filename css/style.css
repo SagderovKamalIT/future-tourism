@@ -1482,7 +1482,7 @@ section {
     gap: 2.313rem;
   }
   .join__container h2 {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
   }
   .join__container-list {
     gap: 1.063rem;
@@ -1789,7 +1789,7 @@ section {
   transform: translateY(-50%);
 }
 .burger__btn.burger-btn__open {
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   right: 1.5rem;
   background-image: url(/future-tourism/assets/icons/burger-close_btn.svg);

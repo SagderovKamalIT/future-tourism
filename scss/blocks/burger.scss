@@ -38,7 +38,7 @@
   }
 
   &.burger-btn__open {
-    position: absolute;
+    position: fixed;
     top: 1.5rem;
     right: 1.5rem;
     // background-image: url(../../assets/icons/burger-close_btn.svg);
