@@ -2,7 +2,6 @@
   padding: 3.75rem 0;
 
   &__wrap {
-    //  background-image: url(../../assets/icons/join__section-line.svg);
     background-image: url(#{$base-url}/assets/icons/join__section-line.svg);
     background-repeat: no-repeat;
     background-position: 50%;
@@ -129,7 +128,6 @@
   
 
     &__wrap {
-      // background-image: url(../../assets/img/join-line_mobile.svg);
       background-image: url(#{$base-url}/assets/img/join-line_mobile.svg);
       background-position: top 16% right 0;
     }

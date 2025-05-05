@@ -11,7 +11,6 @@
     right: 0;
     width: 46.125rem;
     height: 92%;
-    //  background-image: url(../../assets/img/possibilities.png);
     background-image: url(#{$base-url}/assets/img/possibilities.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,7 +97,6 @@
     padding: 2.188rem 0 0 0;
 
     &::before {
-      // background-image: url(../../assets/img/possibilities-mobile.svg);
       background-image: url(#{$base-url}/assets/img/possibilities-mobile.svg);
       background-size: 21.768rem 12.711rem;
       background-position: bottom 0 right -4rem;

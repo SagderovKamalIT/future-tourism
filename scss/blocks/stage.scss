@@ -13,7 +13,6 @@
     grid-template-rows: repeat(4, 1fr);
     row-gap: 2.93rem;
     align-items: center;
-    // background-image: url(../../assets/icons/vertical-line.svg);
     background-image: url(#{$base-url}/assets/icons/vertical-line.svg);
     background-repeat: no-repeat;
     background-position: 50%;
@@ -69,7 +68,6 @@
       flex-direction: column;
       gap: 0.405rem;
       align-items: flex-start;
-      // background-image: url(../../assets/icons/vertical-line-mobile.svg);
       background-image: url(#{$base-url}/assets/icons/vertical-line-mobile.svg);
       background-position: left;
       background-size: contain;
