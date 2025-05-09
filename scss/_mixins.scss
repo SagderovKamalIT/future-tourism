@@ -13,6 +13,11 @@
   border-radius: $brd;
   cursor: pointer;
   border: none;
+
+    &:active {
+    transform: scale(0.95); 
+    opacity: 0.8;           
+  }
 }
 
 $base-url: '/future-tourism';

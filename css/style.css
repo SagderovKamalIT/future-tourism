@@ -285,6 +285,10 @@ section {
   border: none;
   font-family: "Actay Wide";
 }
+.header__btn:active {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
 
 @media (max-width: 860px) {
   .header {
@@ -578,6 +582,10 @@ section {
   cursor: pointer;
   border: none;
   text-decoration: underline;
+}
+.awards__container a:active {
+  transform: scale(0.95);
+  opacity: 0.8;
 }
 
 @media (max-width: 860px) {
@@ -1428,6 +1436,10 @@ section {
   font-family: "Actay Wide";
   margin-top: 5rem;
 }
+.join__container-btn:active {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
 .join__container-btn_link {
   margin: 0 auto;
   text-decoration: none;
@@ -1878,6 +1890,10 @@ section {
     cursor: pointer;
     border: none;
     font-family: "Actay Wide";
+  }
+  .burger__btn-link:active {
+    transform: scale(0.95);
+    opacity: 0.8;
   }
   .burger__nav-item a {
     font-size: 1.5rem;
